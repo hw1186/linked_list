@@ -35,7 +35,7 @@ void freeAll(Node* head) {
 void showAll(Node* head) {
     Node* cur = head->next;
     while (cur != NULL) {
-        printf("%d", cur->data);
+        printf("%d\n", cur->data);
         cur = cur->next;
     }
     return 0;
@@ -49,6 +49,8 @@ int main(void) {
     addFront(head, 7);
     addFront(head, 9);
     addFront(head, 8);
+
+    addFront(head, 10);
     removeFront(head);
     showAll(head);
     freeAll(head);
