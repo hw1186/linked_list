@@ -52,6 +52,12 @@ int main(void) {
     removeFront(head);
     showAll(head);
     freeAll(head);
+
+
+
+
+
+
     system("pause");
     return 0;
 }
